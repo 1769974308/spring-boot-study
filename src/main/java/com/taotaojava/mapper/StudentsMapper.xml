@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.taotaojava.mapper.StudentsMapper">
+
+    <select id="findByNO2" parameterType="String" resultType="com.taotaojava.pojo.Students">
+        SELECT s_no,s_name,s_sex,s_birthday,s_class FROM students where s_no = #{sNo}
+    </select>
+</mapper>
